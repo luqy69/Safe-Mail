@@ -1,0 +1,18 @@
+# Build artifacts
+build/
+dist/
+*.exe
+
+# PyInstaller spec files (kept in specs/ dir)
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / credentials
+.env
+
+# Logs
+*.log
+startup_error_log.txt
