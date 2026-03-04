@@ -8,6 +8,14 @@
 
 ---
 
+## 📥 Download
+
+> **[⬇️ Download SafeMail-Package-v2.0.zip](../../releases/download/v2.0/SafeMail-Package-v2.0.zip)** — No Python needed, just extract and run!
+>
+> Or visit the [Releases page](../../releases/latest) to see all downloads.
+
+---
+
 ## ✨ Features
 
 | Feature | Description |
@@ -37,9 +45,10 @@
 ### Option 1: Pre-built Executables (No Python needed)
 
 1. Download the latest release from [Releases](../../releases)
-2. Right-click `setup.exe` → **Run as administrator**
-3. Follow the guided prompts
-4. Done! SafeMail runs silently at every login
+2. Extract the zip
+3. Right-click `setup.exe` → **Run as administrator**
+4. Follow the guided prompts
+5. Done! SafeMail runs silently at every login
 
 ### Option 2: Run from Source
 
@@ -104,6 +113,7 @@ Safe-Mail/
 │   ├── setup.spec
 │   ├── startup2.spec
 │   └── uninstall.spec
+├── package/                # Download instructions for pre-built releases
 ├── .env.example            # Template for environment variables
 ├── .gitignore
 ├── requirements.txt
