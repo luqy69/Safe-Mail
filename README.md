@@ -10,9 +10,16 @@
 
 ## 📥 Download
 
-> **[⬇️ Download SafeMail-Package-v2.0.zip](../../releases/download/v2.0/SafeMail-Package-v2.0.zip)** — No Python needed, just extract and run!
+> **[⬇️ Download SafeMail Package](package/)** — No Python needed, just download the exe files and run!
 >
 > Or visit the [Releases page](../../releases/latest) to see all downloads.
+
+> [!WARNING]
+> **Windows Defender may flag the executables as a false positive.**
+> This is normal for PyInstaller-packaged apps that access system info, webcam, and email.
+> The source code is fully open in [`src/`](src/) — review it yourself!
+>
+> **To fix:** Open Windows Security → Virus & threat protection → Protection history → find the detection → click **Allow on device**. See detailed instructions in [`package/README.md`](package/README.md).
 
 ---
 
@@ -44,8 +51,8 @@
 
 ### Option 1: Pre-built Executables (No Python needed)
 
-1. Download the latest release from [Releases](../../releases)
-2. Extract the zip
+1. Download the exe files from the [`package/`](package/) folder
+2. **Add the folder as a Windows Defender exclusion** (see warning above)
 3. Right-click `setup.exe` → **Run as administrator**
 4. Follow the guided prompts
 5. Done! SafeMail runs silently at every login
@@ -113,7 +120,11 @@ Safe-Mail/
 │   ├── setup.spec
 │   ├── startup2.spec
 │   └── uninstall.spec
-├── package/                # Download instructions for pre-built releases
+├── package/                # Pre-built executables for download
+│   ├── setup.exe
+│   ├── startup2.exe
+│   ├── uninstall.exe
+│   └── README.md
 ├── .env.example            # Template for environment variables
 ├── .gitignore
 ├── requirements.txt
